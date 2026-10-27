@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thala 7 – Checkout</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">Thala <span>7.</span></a>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">About</a></li>
+      <li><a href="product.html">Brands &#9662;</a></li>
+      <li><a href="product.html">More &#9662;</a></li>
+      <li><a href="checkout.html">Contact</a></li>
+    </ul></nav>
+    <div class="nav-right">
+      <label class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="text" placeholder="Search" /></label>
+      <a href="cart.html" class="cart-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 016 0"/></svg><span id="cart-count">0</span></a>
+      <span class="avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#3b4452"/><circle cx="20" cy="15" r="7" fill="#e8c9a8"/><path d="M6 38c2-10 26-10 28 0z" fill="#e8c9a8"/></svg></span>
+    </div>
+  </header>
+  <main class="checkout">
+    <section class="checkout-left">
+      <p class="muted">Checkout</p>
+      <h2>Contact Details</h2>
+      <label for="email">Email ID</label>
+      <input id="email" class="field" type="email" placeholder="John Doe" />
+      <h2>Payment</h2>
+      <div class="pay-card">
+        <div class="methods">
+          <button class="method active">&#9645;<span>Card</span></button>
+          <button class="method">&#8383;<span>Crypto</span></button>
+          <button class="method">&#127974;<span>Bank</span></button>
+          <button class="method more">&#8942;</button>
+        </div>
+        <label for="cn">Card Number</label>
+        <input id="cn" class="field" placeholder="John Doe" />
+        <div class="two">
+          <div><label for="exp">Expiry</label><input id="exp" class="field" placeholder="MM/YY" /></div>
+          <div><label for="cvv">CVC</label><input id="cvv" class="field" placeholder="***" /></div>
+        </div>
+        <div class="two">
+          <div><label for="country">Country</label>
+            <select id="country" class="field"><option>India</option><option>USA</option><option>UK</option></select></div>
+          <div><label for="zip">ZIP</label><input id="zip" class="field" placeholder="XXXXX" /></div>
+        </div>
+      </div>
+    </section>
+    <section class="checkout-right">
+      <h2 class="center">Order Summary</h2>
+      <div class="summary-card">
+        <label for="coupon">Enter Coupon Code</label>
+        <div class="coupon-row">
+          <input id="coupon" type="text" placeholder="COUPON CODE" />
+          <button class="blue-btn" id="apply-coupon">Apply Coupon</button>
+        </div>
+        <p id="coupon-msg" class="coupon-msg"></p>
+        <dl class="totals">
+          <div><dt>Sub Total</dt><dd id="sub">₹0</dd></div>
+          <div><dt>Taxes(if applicable)</dt><dd id="tax">₹0</dd></div>
+          <div><dt>Discount</dt><dd id="disc">₹0</dd></div>
+          <div class="grand"><dt>Total</dt><dd id="total">₹0</dd></div>
+        </dl>
+      </div>
+      <button class="pay-btn">Pay Now <span class="pay-total">₹0</span></button>
+      <div class="pay-icons">
+        <span class="secure">&#10003; SECURE<small>SSL ENCRYPTED</small></span>
+        <span class="razor">&#9698; Razorpay</span>
+        <span class="secure">&#10003; SECURE<small>PAYMENT</small></span>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

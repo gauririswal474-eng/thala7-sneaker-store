@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thala 7 – Product</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">Thala <span>7.</span></a>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="product.html">About</a></li>
+      <li><a href="product.html">Brands &#9662;</a></li>
+      <li><a href="product.html">More &#9662;</a></li>
+      <li><a href="checkout.html">Contact</a></li>
+    </ul></nav>
+    <div class="nav-right">
+      <label class="search"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input type="text" placeholder="Search" /></label>
+      <a href="cart.html" class="cart-btn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 8h14l-1 12H6z"/><path d="M9 8a3 3 0 016 0"/></svg><span id="cart-count">0</span></a>
+      <span class="avatar"><svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#3b4452"/><circle cx="20" cy="15" r="7" fill="#e8c9a8"/><path d="M6 38c2-10 26-10 28 0z" fill="#e8c9a8"/></svg></span>
+    </div>
+  </header>
+  <main class="container">
+    <p class="crumbs">Home &gt; THALA FOR A REASON &gt; Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</p>
+    <section class="product">
+      <div class="product-img"><img id="main-img" src="images/shoe1.svg" alt="Shoe" /></div>
+      <div class="product-info">
+        <h1>Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</h1>
+        <p class="desc">For exceptional fit, feel and smooth transitions get going with these dual mid sole technology shoes constructed with molded EVS sock liner, gel at heel area, rubber outsole, fused upper and breathable...</p>
+        <div class="price-row">
+          <div class="price">₹1,334</div>
+          <div><b class="save">Save 12%</b><br /><span class="muted">Inclusive of all Taxes</span></div>
+        </div>
+        <div class="buy-row">
+          <select id="qty" aria-label="Quantity">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+          </select>
+          <button class="add-btn" id="add-to-cart">&#128722; ADD TO CART</button>
+        </div>
+        <p id="added-msg" class="coupon-msg"></p>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="thumb"><img src="images/shoe1.svg" alt="View 1" /></div>
+      <div class="thumb"><img src="images/shoe2.svg" alt="View 2" /></div>
+      <div class="thumb"><img src="images/shoe3.svg" alt="View 3" /></div>
+      <div class="thumb"><img src="images/shoe4.svg" alt="View 4" /></div>
+      <div class="thumb"><img src="images/shoe5.svg" alt="View 5" /></div>
+      <div class="thumb"><img src="images/shoe6.svg" alt="View 6" /></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
